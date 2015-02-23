@@ -159,11 +159,12 @@ int main(int argc, const char* argv[]) {
  //       printf("security = %s\n", (BT_SECURITY_MEDIUM == btSecurity.level) ? "medium" : "low");
 
         if (BT_SECURITY_MEDIUM == btSecurity.level) {
-            printf("socket security level at medium\n");
+            printf("\e[1;32msocket security level at medium\n\e[0m");
             goto done;
         }
     }
 
+    printf("\e[1;31mconfiguring socket security failed\n\e[0m");
 done:
     if (l2capSock != -1)
         close(l2capSock);
