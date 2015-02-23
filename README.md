@@ -2,6 +2,20 @@
 
 This small example library contains a c program which asserts whether bluetooth security can be set on a l2cap socket. It is essentially just a test program.
 
+# building
+
+* Install node-gyp.
+
+```
+sudo npm install node-gyp -g
+```
+
+* Rebuild the project.
+
+```
+node-gyp rebuild
+```
+
 # usage
 
 * Locate the tag you wanna try and communicate too.
